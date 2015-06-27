@@ -29,7 +29,7 @@
 
 .main-content__body__right {
     width: 270px;
-    float: right;    
+    float: right;
 }
 
 .widget-item {
@@ -56,9 +56,6 @@
 
 .widget-item__body__add input[type=text] {
     width: 146px;
-    height: 24px;
-    padding: 0px 5px;
-    box-sizing: border-box
 }
 
 .delete-button {
@@ -80,7 +77,7 @@
     border: none;
 }
 
-.normal-btn {    
+.normal-btn {
     font-size: 11px;
     background: url(images/normal-btn.png) no-repeat;
     width: 72px;
@@ -148,7 +145,9 @@
     float: right;
 }
 
-.list-right a, .module__item--left a, .module__item--right__sub-title a {
+.list-right a,
+.module__item--left a,
+.module__item--right__sub-title a {
     width: 5px;
     height: 5px;
     text-decoration: none;
@@ -158,34 +157,37 @@
 
 .widget-item__body > div > a {
     color: #00728a;
-    font-size: 11px;    
+    font-size: 11px;
 }
 
-.main-content__body__left, .module {
+.main-content__body__left,
+.module {
     border: 1px solid #dee7e8;
 }
 
 .main-content__body__left__item {
-    padding: 12px 0px;    
+    padding: 12px 0px;
 }
 
 .main-content__body__left__item__title {
     float: left;
-    width: 140px;     
+    width: 140px;
     font-size: 12px;
     padding-top: 5px;
     font-weight: bold;
     color: #00728a;
-    padding-left: 21px;    
+    padding-left: 21px;
     box-sizing: border-box;
-    display: block;    
+    display: block;
 }
 
-.main-content__body__left__item, .main-content__body__left__item__option {
+.main-content__body__left__item,
+.main-content__body__left__item__option {
     height: auto;
 }
 
-.odd, .module {
+.odd,
+.module {
     background-color: #f5f9fa;
 }
 
@@ -204,7 +206,8 @@
     display: inline-block
 }
 
-.main-content__body__left__item__option > select, #budget {     
+.main-content__body__left__item__option > select,
+#budget {
     height: 22px;
     font-size: 12px;
     border-radius: 3px;
@@ -212,7 +215,8 @@
     border-top-color: #abadb3;
 }
 
-#client, #budget {
+#client,
+#budget {
     width: 250px;
 }
 
@@ -220,9 +224,13 @@
     width: 220px;
 }
 
-.main-content__body__left__item__option > input[type=text], #budget-hour {
+.main-content__body__left__item__option > input[type=text],
+#budget-hour,
+.widget-item__body__add input[type=text] {
     height: 25px;
     border: 1px solid #cccccc;
+    padding: 0px 8px;
+    box-sizing: border-box;
 }
 
 #project-name {
@@ -258,23 +266,27 @@
 .module__title {
     font-size: 12px;
     color: #808080;
+    margin-bottom: 30px;
 }
 
 .module--left {
+    width: 18%;
     float: left;
 }
 
 .module--right {
-    float: right;    
+    float: right;
+    width: 82%;
 }
 
 .module--right > div {
     display: inline-block;
 }
 
-.billable {
+.billable,
+.module__item--right__head--right > .billable {
     float: right;
-    width: 64px;
+    width: 60px;
 }
 
 .billable input {
@@ -282,8 +294,9 @@
 }
 
 .hours {
-    width: 53px;
-    text-align: center
+    float: right;
+    width: 55px;
+    text-align: center;
 }
 
 .hours > input[type=text] {
@@ -295,6 +308,11 @@
     color: #7e7e7e;
 }
 
+.bind-task {
+    float: right;
+    width: 66px;
+}
+
 .module__item {
     clear: both;
 }
@@ -302,11 +320,23 @@
 .module__item--left {
     font-size: 12px;
     font-weight: bold;
+    width: 18%;
+    float: left;
+}
+
+.module__item--left > span {
+    position: absolute;
+    margin-left: 2px;
+}
+
+.module__item--right {
+    width: 82%;
+    display: inline-block;
 }
 
 .module__item--right__sub {
     float: right;
-    width: 480px;
+    width: 100%;
 }
 
 .module__item--right__sub__item {
@@ -315,10 +345,11 @@
 
 .module__item--right__sub-title {
     float: left;
+    font-size: 11px;
 }
 
 .module__item--right__sub-option {
-    float: right;    
+    float: right;
 }
 
 .module__item--right__head--left select {
@@ -328,4 +359,36 @@
     border-radius: 3px;
     border: 1px solid #e3e9ef;
     border-top-color: #abadb3;
+}
+
+.module__item--right__head--left {
+    width: 50%;
+    float: left;
+}
+
+.module__item--right__head--right {
+    width: 50%;
+    float: right;
+    font-size: 14px;
+}
+
+.module__item--right__sub {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-top: 1px solid #dee7e8;
+    border-bottom: 1px solid #dee7e8;
+}
+
+.module__item--right__sub__item {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 20px;
+}
+
+.btn-indent {
+    margin-left: 10px;
+}
+
+.processing {
+    padding-left: 21px;
 }

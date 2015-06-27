@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Test</title>
     <link rel="stylesheet" href="template.css">
-    <link rel="stylesheet" href="create_project_style.css">    
+    <link rel="stylesheet" href="create_project_style.css">
 </head>
-
 <body>
     <div class="content">
         <div class="navigation">
@@ -19,18 +17,16 @@
                                 <a href="#">
                                     <img src="images/logo.png" alt="Niteco timesheet" />
                                 </a>
-                            </div>                        
+                            </div>
                         </div>
-
                         <div class="navigation__right-part">
                             <div class="navigation__right-part__top">
                                 <div class="navigation__right-part__top--left">
                                     Welcome Tran Hoang
                                 </div>
-
                                 <div class="navigation__right-part__top--right">
                                     <a href="#">My Profile</a> | <a href="#">Sign Out</a>
-                                </div>                        
+                                </div>
                             </div>
                             <div class="navigation__right-part__bottom">
                                 <div class="navigation__right-part__bottom__left">
@@ -39,14 +35,14 @@
                                             <li><a href="#">Home</a></li>
                                             <li><a href="#">Reports</a></li>
                                             <li>
-                                                <a href="#">Timesheets</a>                                              
+                                                <a href="#">Timesheets</a>
                                                 <ul class="hidden">
                                                     <li class="sub-tab-active"><a href="#">Project</a></li>
                                                     <li>|</li>
                                                     <li><a href="#">Task management</a></li>
                                                     <li>|</li>
                                                     <li><a href="#">People management</a></li>
-                                                </ul>                                                
+                                                </ul>
                                             </li>
                                             <li class="tab-active">
                                                 <a href="#">Manage</a>
@@ -56,8 +52,8 @@
                                                     <li><a href="#">Task management</a></li>
                                                     <li>|</li>
                                                     <li><a href="#">People management</a></li>
-                                                </ul>                                                
-                                            </li>                                   
+                                                </ul>
+                                            </li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -83,7 +79,7 @@
                         <h3>Create Projects</h3>
                     </div>
                     <div class="main-content__header__right">
-                        <button type="button" class="delete-button">Delete project</button>                        
+                        <button type="button" class="delete-button">Delete project</button>
                     </div>
                 </div>
                 
@@ -99,7 +95,7 @@
                                     <option id="client-2">Microsoft</option>
                                     <option id="client-3">Others</option>
                                 </select>
-                                <button class="normal-btn">+ Add new</button>
+                                <button class="normal-btn btn-indent">+ Add new</button>
                             </div>
                         </div>
                         
@@ -130,186 +126,277 @@
                                 <input type="radio" name="invoice-method" value="billable"> <span>This project is billable, and we invoice by</span> <select id="invoice-option">
                                 <option>task hourly rate</option>
                                 <option>pre-defined contract</option>
-                                </select>
-                            </div>
+                            </select>
                         </div>
-                        
-                        <div class="main-content__body__left__item odd">
-                            <div class="main-content__body__left__item__title">
-                                Budget
-                            </div>
-                            <div class="main-content__body__left__item__option">
-                                <div>
-                                    <select id="budget">
-                                        <option>Total project hours</option>
-                                    </select>
-                                    <input type="text" id="budget-hour" /> hours
-                                </div>
-                                <div class="checkbox-budget">
-                                    
-                                    <label><input type="checkbox" value="show-budget-report"> Show budget reports to all employees and contractors on this project </label>
-                                    <label><input type="checkbox" value="send-email-alert"> Send email alerts if project reaches <input type="text" id="budget-alert" /> % of budget</label>
-                                </div>
-                            </div>
+                    </div>
+                    
+                    <div class="main-content__body__left__item odd">
+                        <div class="main-content__body__left__item__title">
+                            Budget
                         </div>
-
-                        <div class="main-content__body__left__item even">
-                            <div class="main-content__body__left__item__title">
-                                Create module
-                            </div>
-                            <div class="main-content__body__left__item__option">
-                                <select id="module">
-                                    <option>Download module</option>
+                        <div class="main-content__body__left__item__option">
+                            <div>
+                                <select id="budget">
+                                    <option>Total project hours</option>
                                 </select>
-                                <button class="normal-btn">+ Add new</button>
+                                <input type="text" id="budget-hour" /> hours
                             </div>
-                            <div class="module">
-                                <div class="module__title">
-                                    <div class="module--left">
-                                        MODULE NAME
-                                    </div>
-                                    <div class="module--right">
-                                        <div class="hours">HOURS</div>
-                                        <div class="billable">BILLABLE</div>                                        
-                                    </div>
-                                </div>
+                            <div class="checkbox-budget">
                                 
-                                <div class="module__item">
-                                    <div class="module__item--left">                                        
-                                        <a href="#">x</a> Login                                        
-                                    </div>
-                                    <div class="module__item--right">                                        
-                                        <div class="module__item--right__head">
-                                            <div class="module__item--right__head--left">
-                                                <select>
-                                                    <option>Login failed</option>
-                                                </select>
-                                                <button class="green-btn-small">+ Bind task</button>
+                                <label><input type="checkbox" value="show-budget-report"> Show budget reports to all employees and contractors on this project </label>
+                                <label><input type="checkbox" value="send-email-alert"> Send email alerts if project reaches <input type="text" id="budget-alert" /> % of budget</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-content__body__left__item even">
+                        <div class="main-content__body__left__item__title">
+                            Create module
+                        </div>
+                        <div class="main-content__body__left__item__option">
+                            <select id="module">
+                                <option>Download module</option>
+                            </select>
+                            <button class="normal-btn btn-indent">+ Add new</button>
+                        </div>
+                        <div class="module">
+                            <div class="module__title">
+                                <div class="module--left">
+                                    MODULE NAME
+                                </div>
+                                <div class="module--right">
+                                    <div class="billable">BILLABLE</div>
+                                    <div class="hours">HOURS</div>
+                                    <div class="binding-task"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="module__item">
+                                <div class="module__item--left">
+                                    <a href="#">x</a> <span>Login</span>
+                                </div>
+                                <div class="module__item--right">
+                                    <div class="module__item--right__head">
+                                        <div class="module__item--right__head--left">
+                                            <select>
+                                                <option>Login failed</option>
+                                            </select>
+                                            <button class="green-btn-small">+ Bind task</button>
+                                        </div>
+                                        <div class="module__item--right__head--right">
+                                            <div class="billable">
+                                                <input type="checkbox" value="billable" />
                                             </div>
-                                            <div class="module__item--right__head--right">
+                                            
+                                            <div class="hours">
+                                                60
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="module__item--right__sub">
+                                        <div class="module__item--right__sub__item">
+                                            <div class="module__item--right__sub-title">
+                                                <a href="#">x</a> Check available name
+                                            </div>
+                                            <div class="module__item--right__sub-option">
                                                 <div class="billable">
                                                     <input type="checkbox" value="billable" />
                                                 </div>
-                                                
                                                 <div class="hours">
-                                                    60
+                                                    <input type="text" id="sub-task-hour" value="20"/>
                                                 </div>
                                             </div>
                                         </div>
                                         
-                                        <div class="module__item--right__sub">
-                                            <div class="module__item--right__sub__item">
-                                                <div class="module__item--right__sub-title">
-                                                    <a href="#">x</a> Check available name
+                                        <div class="module__item--right__sub__item">
+                                            <div class="module__item--right__sub-title">
+                                                <a href="#">x</a> Check security
+                                            </div>
+                                            <div class="module__item--right__sub-option">
+                                                <div class="billable">
+                                                    <input type="checkbox" value="billable" />
                                                 </div>
-
-                                                <div class="module__item--right__sub-option">
-                                                    <div class="billable">
-                                                        <input type="checkbox" value="billable" />
-                                                    </div>
-                                                    <div class="hours">
-                                                        <input type="text" id="sub-task-hour" value="20"/>
-                                                    </div>
+                                                <div class="hours">
+                                                    <input type="text" id="sub-task-hour" value="20"/>
                                                 </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="module__item--right__sub__item">
+                                            <div class="module__item--right__sub-title">
+                                                <a href="#">x</a> Test with account
+                                            </div>
+                                            <div class="module__item--right__sub-option">
+                                                <div class="billable">
+                                                    <input type="checkbox" value="billable" />
+                                                </div>
+                                                <div class="hours">
+                                                    <input type="text" id="sub-task-hour" value="20"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="module__item">
+                                <div class="module__item--left">
+                                    <a href="#">x</a> <span>Logout</span>
+                                </div>
+                                <div class="module__item--right">
+                                    <div class="module__item--right__head">
+                                        <div class="module__item--right__head--left">
+                                            
+                                        </div>
+                                        <div class="module__item--right__head--right">
+                                            <div class="billable">
+                                                <input type="checkbox" value="billable" />
                                             </div>
                                             
-                                            <div class="module__item--right__sub__item">
-                                                <div class="module__item--right__sub-title">
-                                                    <a href="#">x</a> Check security
-                                                </div>
-
-                                                <div class="module__item--right__sub-option">
-                                                    <div class="billable">
-                                                        <input type="checkbox" value="billable" />
-                                                    </div>
-                                                    <div class="hours">
-                                                        <input type="text" id="sub-task-hour" value="20"/>
-                                                    </div>
-                                                </div>
+                                            <div class="hours">
+                                                <input type="text" id="task-hour" />
+                                            </div>
+                                            <div class="bind-task">
+                                                <button class="normal-btn-small">+ Bind task</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="module__item">
+                                <div class="module__item--left">
+                                    <a href="#">x</a> <span>Register</span>
+                                </div>
+                                <div class="module__item--right">
+                                    <div class="module__item--right__head">
+                                        <div class="module__item--right__head--left">
+                                            
+                                        </div>
+                                        <div class="module__item--right__head--right">
+                                            <div class="billable">
+                                                <input type="checkbox" value="billable" />
                                             </div>
                                             
-                                            <div class="module__item--right__sub__item">
-                                                <div class="module__item--right__sub-title">
-                                                    <a href="#">x</a> Test with account
-                                                </div>
-
-                                                <div class="module__item--right__sub-option">
-                                                    <div class="billable">
-                                                        <input type="checkbox" value="billable" />
-                                                    </div>
-                                                    <div class="hours">
-                                                        <input type="text" id="sub-task-hour" value="20"/>
-                                                    </div>
-                                                </div>
+                                            <div class="hours">
+                                                <input type="text" id="task-hour" />
+                                            </div>
+                                            <div class="bind-task">
+                                                <button class="normal-btn-small">+ Bind task</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                
-                                <div class="module__item">
-                                    <div class="module__item--left">                                        
-                                        <a href="#">x</a> Logout                                       
-                                    </div>
-                                    <div class="module__item--right">                                        
-                                        <div class="module__item--right__head">
-                                            <div class="module__item--right__head--left">
-                                                
+                            </div>
+                            
+                            <div class="module__item">
+                                <div class="module__item--left">
+                                    <a href="#">x</a> <span>Main screen design</span>
+                                </div>
+                                <div class="module__item--right">
+                                    <div class="module__item--right__head">
+                                        <div class="module__item--right__head--left">
+                                            
+                                        </div>
+                                        <div class="module__item--right__head--right">
+                                            <div class="billable">
+                                                <input type="checkbox" value="billable" />
                                             </div>
-                                            <div class="module__item--right__head--right">
-                                                <div class="billable">
-                                                    <input type="checkbox" value="billable" />
-                                                </div>
-                                                
-                                                <div class="hours">
-                                                    <input type="text" id="task-hour" />
-                                                    <button class="normal-btn-small">+ Bind task</button>
-                                                </div>
+                                            
+                                            <div class="hours">
+                                                <input type="text" id="task-hour" />
+                                            </div>
+                                            <div class="bind-task">
+                                                <button class="normal-btn-small">+ Bind task</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                
-                                <div class="module__item">
-                                    <div class="module__item--left">                                        
-                                        <a href="#">x</a> Register                                      
-                                    </div>
-                                    <div class="module__item--right">                                        
-                                        <div class="module__item--right__head">
-                                            <div class="module__item--right__head--left">
-                                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="main-content__body__left__item odd">
+                        <div class="main-content__body__left__item__title">
+                            Bind people
+                        </div>
+                        <div class="main-content__body__left__item__option">
+                            <select id="client">
+                                <option>Hoang Tran</option>
+                            </select>
+                            <button class="normal-btn btn-indent">+ Bind people</button>
+                        </div>
+                        <div class="module">
+                            <div class="module__title">
+                                <div class="module--left">
+                                    MODULE NAME
+                                </div>
+                                <div class="module--right">
+                                    <div class="billable">BILLABLE</div>
+                                    <div class="hours">HOURS</div>
+                                </div>
+                            </div>
+                            
+                            <div class="module__item">
+                                <div class="module__item--left">
+                                    <a href="#">x</a> Binh Nguyen
+                                </div>
+                                <div class="module__item--right">
+                                    <div class="module__item--right__head">
+                                        <div class="module__item--right__head--left">
+                                            
+                                        </div>
+                                        <div class="module__item--right__head--right">
+                                            <div class="billable">
+                                                <input type="checkbox" value="billable" />
                                             </div>
-                                            <div class="module__item--right__head--right">
-                                                <div class="billable">
-                                                    <input type="checkbox" value="billable" />
-                                                </div>
-                                                
-                                                <div class="hours">
-                                                    <input type="text" id="task-hour" />
-                                                    <button class="normal-btn-small">+ Bind task</button>
-                                                </div>
+                                            
+                                            <div class="hours">
+                                                <input type="text" id="task-hour" />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                
-                                <div class="module__item">
-                                    <div class="module__item--left">                                        
-                                        <a href="#">x</a> Main screen design                                      
-                                    </div>
-                                    <div class="module__item--right">                                        
-                                        <div class="module__item--right__head">
-                                            <div class="module__item--right__head--left">
-                                                
+                            </div>
+                            
+                            <div class="module__item">
+                                <div class="module__item--left">
+                                    <a href="#">x</a> Hoang Tran
+                                </div>
+                                <div class="module__item--right">
+                                    <div class="module__item--right__head">
+                                        <div class="module__item--right__head--left">
+                                            
+                                        </div>
+                                        <div class="module__item--right__head--right">
+                                            <div class="billable">
+                                                <input type="checkbox" value="billable" />
                                             </div>
-                                            <div class="module__item--right__head--right">
-                                                <div class="billable">
-                                                    <input type="checkbox" value="billable" />
-                                                </div>
-                                                
-                                                <div class="hours">
-                                                    <input type="text" id="task-hour" />
-                                                    <button class="normal-btn-small">+ Bind task</button>
-                                                </div>
+                                            
+                                            <div class="hours">
+                                                <input type="text" id="task-hour" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="module__item">
+                                <div class="module__item--left">
+                                    <a href="#">x</a> Thanh Bui
+                                </div>
+                                <div class="module__item--right">
+                                    <div class="module__item--right__head">
+                                        <div class="module__item--right__head--left">
+                                            
+                                        </div>
+                                        <div class="module__item--right__head--right">
+                                            <div class="billable">
+                                                <input type="checkbox" value="billable" />
+                                            </div>
+                                            
+                                            <div class="hours">
+                                                <input type="text" id="task-hour" />
                                             </div>
                                         </div>
                                     </div>
@@ -317,214 +404,128 @@
                             </div>
                         </div>
                         
-                        <div class="main-content__body__left__item odd">
-                            <div class="main-content__body__left__item__title">
-                                Bind people
-                            </div>
-                            <div class="main-content__body__left__item__option">
-                                <select id="client">
-                                    <option>Hoang Tran</option>
-                                </select>
-                                <button class="normal-btn">+ Bind people</button>
-                            </div>
-                            <div class="module">
-                                <div class="module__title">
-                                    <div class="module--left">
-                                        MODULE NAME
-                                    </div>
-                                    <div class="module--right">
-                                        <div class="billable">BILLABLE</div>
-                                        <div class="hours">HOURS</div>
-                                    </div>
-                                </div>                                                                
-                                
-                                <div class="module__item">
-                                    <div class="module__item--left">                                        
-                                        <a href="#">x</a> Binh Nguyen                                       
-                                    </div>
-                                    <div class="module__item--right">                                        
-                                        <div class="module__item--right__head">
-                                            <div class="module__item--right__head--left">
-                                                
-                                            </div>
-                                            <div class="module__item--right__head--right">
-                                                <div class="billable">
-                                                    <input type="checkbox" value="billable" />
-                                                </div>
-                                                
-                                                <div class="hours">
-                                                    <input type="text" id="task-hour" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="module__item">
-                                    <div class="module__item--left">                                        
-                                        <a href="#">x</a> Hoang Tran                                     
-                                    </div>
-                                    <div class="module__item--right">                                        
-                                        <div class="module__item--right__head">
-                                            <div class="module__item--right__head--left">
-                                                
-                                            </div>
-                                            <div class="module__item--right__head--right">
-                                                <div class="billable">
-                                                    <input type="checkbox" value="billable" />
-                                                </div>
-                                                
-                                                <div class="hours">
-                                                    <input type="text" id="task-hour" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="module__item">
-                                    <div class="module__item--left">                                        
-                                        <a href="#">x</a> Thanh Bui                                    
-                                    </div>
-                                    <div class="module__item--right">                                        
-                                        <div class="module__item--right__head">
-                                            <div class="module__item--right__head--left">
-                                                
-                                            </div>
-                                            <div class="module__item--right__head--right">
-                                                <div class="billable">
-                                                    <input type="checkbox" value="billable" />
-                                                </div>
-                                                
-                                                <div class="hours">
-                                                    <input type="text" id="task-hour" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="processing">
-                                <button class="green-btn-big">Save project setting</button>
-                                <button class="yellow-btn">Cancel</button>
-                            </div>
+                        <div class="processing">
+                            <button class="green-btn-big">Save project setting</button>
+                            <button class="yellow-btn">Cancel</button>
                         </div>
                     </div>
-                    
-                    <div class="main-content__body__right">
-                        <div class="widget-item">
-                            <div class="widget-item__header">
-                                Task Management
-                            </div>
-                            
-                            <div class="widget-item__body">
-                                <div class="widget-item__body__add">
-                                    <input type="text" id="add-task" />
-                                    <button class="green-btn">+ Add new</button>
-                                </div>
-                                
-                                <div class="widget-item__body__list">
-                                    <div class="widget-item__body__list__item">
-                                        <div class="list-left">
-                                            Login
-                                        </div>
-                                        <div class="list-right">
-                                            <a href="#">x</a>
-                                        </div>
-                                    </div>
-                                    <div class="widget-item__body__list__item">
-                                        <div class="list-left">
-                                            Check security
-                                        </div>
-                                        <div class="list-right">
-                                            <a href="#">x</a>
-                                        </div>
-                                    </div>
-                                    <div class="widget-item__body__list__item">
-                                        <div class="list-left">
-                                            Deployment
-                                        </div>
-                                        <div class="list-right">
-                                            <a href="#">x</a>
-                                        </div>
-                                    </div>
-                                    <div class="widget-item__body__list__item">
-                                        <div class="list-left">
-                                            Test
-                                        </div>
-                                        <div class="list-right">
-                                            <a href="#">x</a>
-                                        </div>
-                                    </div>                                                                        
-                                </div>
-                                
-                                <div>
-                                    <a href="#">See all task list</a>
-                                </div>
-                            </div>
+                </div>
+                
+                <div class="main-content__body__right">
+                    <div class="widget-item">
+                        <div class="widget-item__header">
+                            Task Management
                         </div>
-                    </div>
-                    
-                    <div class="main-content__body__right">
-                        <div class="widget-item">
-                            <div class="widget-item__header">
-                                People Management
+                        
+                        <div class="widget-item__body">
+                            <div class="widget-item__body__add">
+                                <input type="text" id="add-task" />
+                                <button class="green-btn">+ Add new</button>
                             </div>
                             
-                            <div class="widget-item__body">
-                                <div class="widget-item__body__add">
-                                    <input type="text" id="add-task" />
-                                    <button class="green-btn">+ Add new</button>
-                                </div>
-                                
-                                <div class="widget-item__body__list">
-                                    <div class="widget-item__body__list__item">
-                                        <div class="list-left">
-                                            Login
-                                        </div>
-                                        <div class="list-right">
-                                            <a href="#">x</a>
-                                        </div>
+                            <div class="widget-item__body__list">
+                                <div class="widget-item__body__list__item">
+                                    <div class="list-left">
+                                        Login
                                     </div>
-                                    <div class="widget-item__body__list__item">
-                                        <div class="list-left">
-                                            Check security
-                                        </div>
-                                        <div class="list-right">
-                                            <a href="#">x</a>
-                                        </div>
+                                    <div class="list-right">
+                                        <a href="#">x</a>
                                     </div>
-                                    <div class="widget-item__body__list__item">
-                                        <div class="list-left">
-                                            Deployment
-                                        </div>
-                                        <div class="list-right">
-                                            <a href="#">x</a>
-                                        </div>
+                                </div>
+                                <div class="widget-item__body__list__item">
+                                    <div class="list-left">
+                                        Check security
                                     </div>
-                                    <div class="widget-item__body__list__item">
-                                        <div class="list-left">
-                                            Test
-                                        </div>
-                                        <div class="list-right">
-                                            <a href="#">x</a>
-                                        </div>
-                                    </div>                                                                        
+                                    <div class="list-right">
+                                        <a href="#">x</a>
+                                    </div>
                                 </div>
-                                
-                                <div>
-                                    <a href="#">See all task list</a>
+                                <div class="widget-item__body__list__item">
+                                    <div class="list-left">
+                                        Deployment
+                                    </div>
+                                    <div class="list-right">
+                                        <a href="#">x</a>
+                                    </div>
                                 </div>
+                                <div class="widget-item__body__list__item">
+                                    <div class="list-left">
+                                        Test
+                                    </div>
+                                    <div class="list-right">
+                                        <a href="#">x</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <a href="#">See all task list</a>
                             </div>
                         </div>
                     </div>
                 </div>
+                
+                <div class="main-content__body__right">
+                    <div class="widget-item">
+                        <div class="widget-item__header">
+                            People Management
+                        </div>
+                        
+                        <div class="widget-item__body">
+                            <div class="widget-item__body__add">
+                                <input type="text" id="add-task" />
+                                <button class="green-btn">+ Add new</button>
+                            </div>
+                            
+                            <div class="widget-item__body__list">
+                                <div class="widget-item__body__list__item">
+                                    <div class="list-left">
+                                        Login
+                                    </div>
+                                    <div class="list-right">
+                                        <a href="#">x</a>
+                                    </div>
+                                </div>
+                                <div class="widget-item__body__list__item">
+                                    <div class="list-left">
+                                        Check security
+                                    </div>
+                                    <div class="list-right">
+                                        <a href="#">x</a>
+                                    </div>
+                                </div>
+                                <div class="widget-item__body__list__item">
+                                    <div class="list-left">
+                                        Deployment
+                                    </div>
+                                    <div class="list-right">
+                                        <a href="#">x</a>
+                                    </div>
+                                </div>
+                                <div class="widget-item__body__list__item">
+                                    <div class="list-left">
+                                        Test
+                                    </div>
+                                    <div class="list-right">
+                                        <a href="#">x</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <a href="#">See all task list</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear:both"></div>
             </div>
         </div>
-        
-        <div class="footer-navigation">
-            <div class="wrapper">
+    </div>
+    
+    <div class="footer-navigation">
+        <div class="wrapper">
+            <div class="table">
                 <nav class="footer-nav">
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -537,4 +538,5 @@
             </div>
         </div>
     </div>
+</div>
 </body>
